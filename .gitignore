@@ -123,3 +123,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#extra files
+/test.py
+.cache-sirawesomeness789
