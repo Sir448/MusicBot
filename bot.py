@@ -130,6 +130,7 @@ async def start(ctx, number, url):
 
         songPos = []
 
+        # print(response_json["items"])
         number = int(number)
         if number > len(response_json["items"]):
             number = len(response_json["items"])
@@ -142,6 +143,8 @@ async def start(ctx, number, url):
 
         for pos in songPos[:5]:
             get_song(pos, response_json)
+
+        print("Game Ready")
         
         await asyncio.sleep(90)
         startMessage = None
